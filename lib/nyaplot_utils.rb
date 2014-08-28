@@ -1,2 +1,2 @@
-require_relative 'lib/version'
-require_relative 'lib/export_svg'
+require_relative 'nyaplot/version'
+require_relative 'nyaplot/export_svg'

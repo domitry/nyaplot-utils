@@ -26,7 +26,7 @@ module Nyaplot
     def export_svg(name=SecureRandom.uuid.to_s + ".svg")
       html = get_nodes
       str = Nokogiri::HTML.parse(html).xpath('//svg').to_s
-      path = File.expand_path("./" + name, Dir/pwd)
+      path = File.expand_path("./" + name, Dir.pwd)
       File.write(path, str)
     end
 
@@ -36,7 +36,7 @@ module Nyaplot
       html = get_nodes
       contents = Nokogiri::HTML.parse(html).at('.context_child').to_s
       str = SVG_HEADER + contents + SVG_CLOSE
-      path = File.expand_path("./" + name, Dir/pwd)
+      path = File.expand_path("./" + name, Dir.pwd)
       File.write(path, str)
     end
   end

@@ -19,6 +19,8 @@ $ gem install nyaplot-utils
 ### Exporting SVG
 
 ```ruby
+require 'nyaplot'
+require 'nyaplot_utils'
 plot = Nyaplot::Plot.new
 plot.add(:scatter, [0,1,2], [1,2,3])
 plot.export_svg('foo.svg')
