@@ -1,2 +1,2 @@
-require_relative 'utils/version'
-require_relative 'utils/export_svg'
+require_relative 'lib/version'
+require_relative 'lib/export_svg'
