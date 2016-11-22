@@ -30,6 +30,12 @@ module Nyaplot
       File.write(path, str)
     end
 
+    # Export plot as SVG string
+    def export_svg_str
+      html = get_nodes
+      Nokogiri::HTML.parse(html).xpath('//svg').to_s
+    end
+
     # Export context of plot as SVG
     # @param [String] name the name of svg file to export
     def export_contents(name=SecureRandom.uuid.to_s + ".svg")
