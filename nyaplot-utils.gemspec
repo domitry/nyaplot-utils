@@ -5,7 +5,7 @@ require 'nyaplot/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "nyaplot-utils"
-  spec.version       = Nyaplot::Utils::VERSION
+  spec.version       = "0.1.1"
   spec.authors       = ["Naoki Nishida"]
   spec.email         = ["domitry@gmail.com"]
   spec.summary       = %q{Small tools for Nyaplot}
